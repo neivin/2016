@@ -1,0 +1,115 @@
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+html {
+	font-size: 62.5%;
+	height: 100%;
+}
+
+body {
+	font-size: 1.5em;
+	/* currently ems cause chrome bug misinterpreting rems on body element */
+	
+	line-height: 1.6;
+	font-weight: 400;
+	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #222;
+	height: 100%;
+	width: 100%;
+}
+
+/* Nav */
+
+.cusecNav {
+	  background-color: rgba(0,0,0,1);
+	  font-size: 16px;
+}
+
+.cusecNav a {
+	  color: white;
+}
+
+/* Base Divs
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+html>body .contentBlock .minorBlock {
+	height: auto;
+}
+
+.contentBlock {
+	height: 100%;
+	min-height: 100%;
+	color: white;
+}
+
+
+#main {
+	background: linear-gradient(228deg, #01e792, #73ccff);
+	z-index: -1;
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 100%;
+	padding-top: 250px;
+	color: white;
+
+}
+
+#about {
+	background-color: azure
+	z-index: -1;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100%;
+	padding: 15% 5%;
+}
+
+#contact {
+	background: linear-gradient(228deg, #01e792, #73ccff);
+	z-index: -1;
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 100%;
+	padding: 0 5%;
+	padding-top: 300px;
+	color: white;
+}
+
+#footer {
+		background: black;
+		color: white;
+}
+
+.down {
+	margin-top: 10%;
+}
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+*/
+
+/*
+/* Larger than mobile */
+
+@media (max-width: 420px) {
+	
+	#main{
+		padding-top: 250px;
+	
+	.down{
+		margin-top: 250px;
+	}
+}
+
+@media (max-width: 768px) {
+	
+	#main{
+		padding-top: 250px;
+	}
+}
+
