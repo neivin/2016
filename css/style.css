@@ -60,7 +60,7 @@ html>body .contentBlock .minorBlock {
 	background-size: cover;
 	background-attachment: fixed;
 	height: 100%;
-	padding: 15% 5%;
+	padding: 5% 5%;
 }
 
 #contact {
@@ -69,8 +69,7 @@ html>body .contentBlock .minorBlock {
 	background-size: cover;
 	background-attachment: fixed;
 	min-height: 100%;
-	padding: 0 5%;
-	padding-top: 300px;
+	padding: 25% 5%;
 	color: white;
 }
 
@@ -85,31 +84,28 @@ html>body .contentBlock .minorBlock {
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/*
 
-Note: The best way to structure the use of media queries is to create the queries
-near the relevant code. For example, if you wanted to change the styles for buttons
-on small devices, paste the mobile query code up in the buttons section and style it
-there.
-*/
-
-/*
-/* Larger than mobile */
-
-@media (max-width: 420px) {
+@media (min-width: 320px) {
 	
 	#main{
-		padding-top: 250px;
-	
-	.down{
-		margin-top: 250px;
+		padding-top: 150px;
+	}
+	#about{
+		height: 120%;
+	}
+	#contact{
+		padding-top: 200px;
 	}
 }
 
-@media (max-width: 768px) {
-	
+@media (min-width: 768px) {
 	#main{
 		padding-top: 250px;
+	}
+	
+	#about{
+		height:100%;
+		padding: 15% 5%;
 	}
 }
 
