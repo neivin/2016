@@ -18,6 +18,16 @@ $(document).ready(function () {
 			});
 		});
 
+$(document).ready(function () {
+			$("#eventButton").click(function () {
+				//$(this).animate(function(){
+				$('html, body').animate({
+					scrollTop: $("#about").offset().top
+				}, 1000);
+				//});
+			});
+		});
+
 		$(document).ready(function () {
 			$("#contactButton").click(function () {
 				//$(this).animate(function(){
