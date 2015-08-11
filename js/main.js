@@ -1,39 +1,28 @@
-		$(document).ready(function () {
-			$("#homeButton").click(function () {
-				//$(this).animate(function(){
-				$('html, body').animate({
-					scrollTop: $("#main").offset().top -50
-				}, 1000);
-				//});
-			});
+//Trim the fat
+
+		$(document).ready(function() {
+		    $("#homeButton").click(function() {
+		        scrollFunction("main");
+		    });
+		    $("#aboutButton").click(function() {
+		        scrollFunction("about");
+		    });
+		    $("#eventButton").click(function() {
+		        scrollFunction("about");
+		    });
+		    $("#contactButton").click(function() {
+		        scrollFunction("contact");
+		    });
+
+
 		});
 
-$(document).ready(function () {
-			$("#aboutButton").click(function () {
-				//$(this).animate(function(){
-				$('html, body').animate({
-					scrollTop: $("#about").offset().top -50
-				}, 1000);
-				//});
-			});
-		});
+		function scrollFunction(divName) {
+		    divToScrollTo = "#".concat(divName)
+		    $('html, body').animate({
+		        scrollTop: $(divToScrollTo).offset().top - 50
+		    }, 1000);
+		}
 
-$(document).ready(function () {
-			$("#eventButton").click(function () {
-				//$(this).animate(function(){
-				$('html, body').animate({
-					scrollTop: $("#about").offset().top -50
-				}, 1000);
-				//});
-			});
-		});
 
-		$(document).ready(function () {
-			$("#contactButton").click(function () {
-				//$(this).animate(function(){
-				$('html, body').animate({
-					scrollTop: $("#contact").offset().top -50
-				}, 1000);
-				//});
-			});
-		});
+
