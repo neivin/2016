@@ -18,6 +18,10 @@ body {
 	width: 100%;
 }
 
+.fa-bars{
+	color: white;
+}
+
 /* Nav */
 
 .cusecNav {
@@ -42,25 +46,63 @@ html>body .contentBlock .minorBlock {
 	color: white;
 }
 
-
-#main {
-	background: linear-gradient(228deg, #01e792, #73ccff);
+.main {
+	background: linear-gradient(170deg, #01e792, #73ccff);
 	z-index: -1;
-	background-size: cover;
-	background-attachment: fixed;
 	min-height: 100%;
 	padding-top: 250px;
+		background-size: cover;
+	background-attachment: fixed;
 	color: white;
-
 }
 
 #about {
-	background-color: azure
+	background-color: white;
 	z-index: -1;
 	background-size: cover;
 	background-attachment: fixed;
-	height: 100%;
+	height: 50%;
 	padding: 5% 5%;
+}
+
+#coc {
+	background-color: ghostwhite;
+	padding: 5% 5%;
+}
+
+#coc button{
+	color: black;
+	border-color: black;
+}
+
+#coc h1{
+	font-size: 3em;
+}
+
+#coc p{
+	font-size: 18px;
+	line-height: 1.7
+}
+
+#coc hr{
+	  border-top: 1px solid #000;
+}
+
+@media (max-width: 320px){
+	#coc {
+		padding: 17% 7%;
+	}
+	#coc h1{
+		font-size: 2.1em;
+	}
+	
+	#coc h2{
+		font-size: 1.4em;
+	}
+	
+	#coc p{
+		font-size: 1em;
+	}
 }
 
 #contact {
@@ -68,7 +110,7 @@ html>body .contentBlock .minorBlock {
 	z-index: -1;
 	background-size: cover;
 	background-attachment: fixed;
-	min-height: 100%;
+	min-height: 50%;
 	padding: 25% 5%;
 	color: white;
 }
@@ -86,15 +128,21 @@ html>body .contentBlock .minorBlock {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 @media (min-width: 320px) {
-	
 	#main{
-		padding-top: 150px;
+		padding-top: 125px;
+	}
+	#main h2{
+		font-size: 1.5em;
+	}
+
+	#main h3{
+		font-size: 1.2em;
 	}
 	#about{
 		height: 130%;
 	}
 	#contact{
-		padding-top: 100px;
+		padding-top: 25%;
 	}
 }
 
@@ -108,4 +156,14 @@ html>body .contentBlock .minorBlock {
 		padding: 15% 5%;
 	}
 }
+.cusec {
+	z-index: 5;
+	position: relative;
+}
 
+#main2 {
+	background: linear-gradient(228deg, #01e792, #73ccff);
+	z-index: 1;
+	min-height: 100%;
+	opacity: 1;
+}
