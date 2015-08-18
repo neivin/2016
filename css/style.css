@@ -12,7 +12,7 @@ body {
 	
 	line-height: 1.6;
 	font-weight: 400;
-	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	color: #222;
 	height: 100%;
 	width: 100%;
@@ -46,12 +46,13 @@ html>body .contentBlock .minorBlock {
 	color: white;
 }
 
-.main {
+.main
+ {
 	background: linear-gradient(170deg, #01e792, #73ccff);
 	z-index: -1;
 	min-height: 100%;
-	padding-top: 250px;
-		background-size: cover;
+	padding-top: 190px;
+	background-size: cover;
 	background-attachment: fixed;
 	color: white;
 }
@@ -66,13 +67,14 @@ html>body .contentBlock .minorBlock {
 }
 
 #coc {
-	background-color: ghostwhite;
+	background: linear-gradient(170deg, #01e792, #73ccff);
 	padding: 5% 5%;
+	color: white;
 }
 
 #coc button{
-	color: black;
-	border-color: black;
+	color: white;
+	border-color: white;
 }
 
 #coc h1{
@@ -83,9 +85,8 @@ html>body .contentBlock .minorBlock {
 	font-size: 18px;
 	line-height: 1.7
 }
-
 #coc hr{
-	  border-top: 1px solid #000;
+	  border-top: 1px solid #fff;
 }
 
 @media (max-width: 320px){
@@ -106,13 +107,11 @@ html>body .contentBlock .minorBlock {
 }
 
 #contact {
-	background: linear-gradient(228deg, #01e792, #73ccff);
+	background-color: ghostwhite;
 	z-index: -1;
 	background-size: cover;
 	background-attachment: fixed;
-	min-height: 50%;
-	padding: 25% 5%;
-	color: white;
+	color: #999;
 }
 
 #footer {
@@ -142,7 +141,8 @@ html>body .contentBlock .minorBlock {
 		height: 130%;
 	}
 	#contact{
-		padding-top: 25%;
+		padding-top: 2%;
+		padding-bottom: 2%;
 	}
 }
 
