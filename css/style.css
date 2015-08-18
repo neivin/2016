@@ -12,7 +12,7 @@ body {
 	
 	line-height: 1.6;
 	font-weight: 400;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: "Quicksand", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 	color: #222;
 	height: 100%;
 	width: 100%;
@@ -33,6 +33,10 @@ body {
 	  color: white;
 }
 
+.cusecNav a:hover{
+	color:aquamarine;
+}
+
 /* Base Divs
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -46,15 +50,19 @@ html>body .contentBlock .minorBlock {
 	color: white;
 }
 
-.main
- {
+#main {
 	background: linear-gradient(170deg, #01e792, #73ccff);
 	z-index: -1;
 	min-height: 100%;
-	padding-top: 190px;
-	background-size: cover;
+	padding-top: 15%;
+		background-size: cover;
 	background-attachment: fixed;
 	color: white;
+}
+
+
+#eventButton {
+	font-size: 1.2em;
 }
 
 #about {
@@ -62,56 +70,66 @@ html>body .contentBlock .minorBlock {
 	z-index: -1;
 	background-size: cover;
 	background-attachment: fixed;
-	height: 50%;
-	padding: 5% 5%;
+	height: 100%;
+	padding: 10% 5%;
+}
+
+#about h2{
+	font-weight: 400;
+	font-size: 35px;
+}
+
+#about p{
+	font-weight: 200;
+	font-size: 20px;
 }
 
 #coc {
-	background: linear-gradient(170deg, #01e792, #73ccff);
+	background-color: ghostwhite;
 	padding: 5% 5%;
-	color: white;
 }
 
 #coc button{
-	color: white;
-	border-color: white;
+	color: black;
+	border-color: black;
 }
 
 #coc h1{
-	font-size: 3em;
+	font-size: 5em;
+	font-weight: 400;
 }
 
 #coc p{
 	font-size: 18px;
 	line-height: 1.7
 }
+
 #coc hr{
-	  border-top: 1px solid #fff;
+	  border-top: 1px solid #000;
 }
 
-@media (max-width: 320px){
-	#coc {
-		padding: 17% 7%;
+@media (max-width: 960px){
+	#about h2{
+		font-size: 2em;
 	}
-	#coc h1{
-		font-size: 2.1em;
-	}
-	
-	#coc h2{
-		font-size: 1.4em;
-	}
-	
-	#coc p{
+	#about p {
 		font-size: 1em;
 	}
 }
 
 #contact {
-	background-color: ghostwhite;
-	z-index: -1;
-	background-size: cover;
-	background-attachment: fixed;
-	color: #999;
+	background: linear-gradient(228deg, #01e792, #73ccff);
+	height: 50%;
+	padding-top: 10%;
+	color: white;
+}
+
+#contact h2 {
+	font-size: 24px;
+}
+
+#contact a:hover{
+	color: white;
 }
 
 #footer {
@@ -123,33 +141,65 @@ html>body .contentBlock .minorBlock {
 	margin-top: 10%;
 }
 
+.cusec {
+	z-index: 5;
+	position: relative;
+}
+
+.mainButtons button:hover{
+	color: white;
+	background-color: darkturquoise;
+}
+
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-@media (min-width: 320px) {
-	#main{
-		padding-top: 125px;
-	}
-	#main h2{
-		font-size: 2em;
-	}
+/* --- MOBIlE --- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+		#main{
+			padding-top: 125px;
+		}
+		#main h2{
+			font-size: 1.5em;
+		}
 
-	#main h3{
-		font-size: 1.7em;
-	}
-	#about{
-		height: 130%;
-	}
-	#contact{
-		padding-top: 2%;
-		padding-bottom: 2%;
-	}
+		#main h3{
+			font-size: 1.2em;
+		}
+		#about{
+			height: 130%;
+		}
+		#coc {
+			padding: 17% 7%;
+		}
+		#coc h1{
+			font-size: 2.1em;
+		}
+
+		#coc h2{
+			font-size: 1.4em;
+		}
+		#coc p{
+			font-size: 1em;
+		}
+		#coc h3{
+			font-size: 1.1em;
+		}
+		#contact h1{
+			font-size: 1.3em;
+		}
 }
 
-@media (min-width: 768px) {
-	#main{
-		padding-top: 190px;
-	}
+/* ----------- TABLETS ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
 	
 	#about{
 		height:100%;
