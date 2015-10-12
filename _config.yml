@@ -1,0 +1,12 @@
+# Site settings
+title: CUSEC 2016
+email: info@cusec.net
+description: > # this means to ignore newlines until "baseurl:"
+  Canadian University Software Engineering Conference
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://2016.cusec.net" # the base hostname & protocol for your site
+twitter_username: cusec
+github_username:  cusec
+
+# Build settings
+markdown: kramdown
