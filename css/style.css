@@ -123,7 +123,7 @@ hr{
 	background-attachment: fixed;
 	min-height: 50%;
 	background: url(../img/bgMap.png);
-	padding: 10% 0;
+	padding: 2% 0;
 	color: black;
 }
 
@@ -145,7 +145,7 @@ h4 {
 #speakers {
 	background: url(../img/diamond.png) repeat;
 	box-shadow: 0px -2px 5px 0 gray;
-	padding: 10% 0;
+	padding: 2% 0;
 }
 
 #speakers h1 {
@@ -227,7 +227,8 @@ h4 {
 
 #section {
 	box-shadow: 0px -2px 5px 0 gray;
-	padding: 5% 0;
+	padding-top: 2%;
+	padding-bottom: 2%;
 	background: ghostwhite;
 	display: table;
 	table-layout: fixed;
@@ -259,7 +260,7 @@ h4 {
 
 #sponsors {
 	box-shadow: 0px -2px 5px 0 gray;
-	padding: 10% 0;
+	padding: 2% 0;
 	background: ghostwhite;
 	display: table;
 	table-layout: fixed;
