@@ -10,3 +10,7 @@ github_username:  cusec
 
 # Build settings
 markdown: kramdown
+
+collections:
+- keynote_speakers
+- breakout_speakers

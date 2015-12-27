@@ -2,185 +2,58 @@
 layout: default
 title: Speakers
 ---
+
+<!-- Keynote Speakers -->
 <div class="row">
   <div class="col-xs-12 col-sm-12 col-lg-6 col-lg-offset-3 text-center bot-left">
     <h1>Keynote Speakers</h1>
   </div>
 </div>
-<div class="row">
-  <div class="col-xs-12 col-sm-12 col-lg-3 col-lg-offset-2">
-    <img class="img-responsive img-circle center-block" src="img/speakers/carina_bio.jpg">
-  </div>
-  <div class="col-xs-12 col-sm-12 col-lg-5">
-    <h2>Carina Zona | Founder of CallbackWomen</h2>
-    <p>Carina is a developer, advocate, dev evangelist, and educator who is passionate about getting people to examine our many preconceptions that underly everyday programming. She is also the founder of CallbackWomen, and a certified sex educator.</p>
-  </div>
-</div>
-<hr>
-<div class="row">
-  <div class="col-xs-12 col-sm-12 col-lg-3 col-lg-offset-2">
-    <img class="img-responsive img-circle center-block" src="img/speakers/kate_pic%20copy.jpg">
-  </div>
-  <div class="col-xs-12 col-sm-12 col-lg-5">
-    <h2>Kate Heddleston | Software Engineer</h2>
-    <p>Kate Heddleston is a software engineer from San Francisco who loves building web applications and programming in python. She studied computer science for her Master's degree, and studied Communication and Human-Computer Interacton for her undergraduate degree. Kate enjoys using open source tools to build web applications and especially likes building portions of the product that interface with the user. You can find everything you never wanted to know about her here: <a href="https://kateheddleston.com/about">https://kateheddleston.com/about</a>
-    </p>
-  </div>
-</div>
-<hr>
-<div class="row">
-  <div class="col-xs-12 col-sm-12 col-lg-3 col-lg-offset-2">
-    <img class="img-responsive img-circle center-block" src="img/speakers/bernstein_pic copy.jpg">
-  </div>
-  <div class="col-xs-12 col-sm-12 col-lg-5">
-    <h2>Michael Bernstein | Developer, Code Climate</h2>
-    <p>Michael R. Bernstein (@mrb_bk) loves you. He lives in Takoma Park, MD and spends most of his time thinking about pottery, obscure LPs, food, and the intersection of philosophy and Computer Science.</p>
-  </div>
-</div>
-<hr>
-<div class="row">
-  <div class="col-xs-12 col-sm-12 col-lg-3 col-lg-offset-2">
-    <img class="img-responsive img-circle center-block" src="img/speakers/jeff_pic.jpg">
-  </div>
-  <div class="col-xs-12 col-sm-12 col-lg-5">
-    <h2>Jeff Hodges | Software Engineer</h2>
-    <p>Jeff Hodges has spent the past six years working in adversarial and distributed systems. He's the author of "Notes on Distributed Systems for Young Bloods". He previously worked at Twitter where he shipped HTTP, anti-spam, search, and other systems. and was featured in the New York Times for his work on forward secrecy. Most recently, he's helped launch Let's Encrypt, a joint effort between Mozilla, the EFF, and others to make a free, non-profit CA.</p>
-  </div>
-</div>
-<hr>
-<div class="row">
-  <div class="col-xs-12 col-sm-12 col-lg-3 col-lg-offset-2">
-    <img class="img-responsive img-circle center-block" src="img/speakers/julia_pic.jpg">
-  </div>
-  <div class="col-xs-12 col-sm-12 col-lg-5">
-    <h2>Julia Evans | Software Engineer, Stripe</h2>
-  </div>
-</div>
+
+{% for speaker in site.keynote_speakers %}
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-lg-3 col-lg-offset-2">
+        <img class="img-responsive img-circle center-block" src="{{speaker.pic}}">
+      </div>
+      <div class="col-xs-12 col-sm-12 col-lg-5">
+        <h2>{{speaker.fname}} {{speaker.lname}} 
+        {% if speaker.tagline %}
+          | {{speaker.tagline}}
+        {% endif %}
+        </h2>
+        <p>{{speaker.bio}}</p>
+      </div>
+    </div>
+    
+    {% if forloop.last != true %}
+      <hr>
+    {% endif %}
+{% endfor %}
+
+<!-- Breakout Speakers -->
+
 <div class="row">
   <div class="col-xs-12 col-sm-12 col-lg-6 col-lg-offset-3 text-center bot-left">
     <h1>Breakout Speakers</h1>
   </div>
 </div>
-<div class="row">
-  <div class="col-xs-12 col-sm-12 col-lg-3 col-lg-offset-2">
-    <img class="img-responsive img-circle center-block" src="img/speakers/selesse_pic.jpg">
-  </div>
-  <div class="col-xs-12 col-sm-12 col-lg-5">
-    <h2>Alex Selesse</h2>
-    <p>Alex Selesse is a software engineering graduate from McGill University in
-Montreal. He spent 2 years working for a big corporation before switching to a
-much smaller company with only 4 other developers. He's been involved in
-several CUSECs; he was co-chair in 2014.<br> Alex's areas of interest include code readability, automation and continuous
-delivery. His talk is based on his professional experience with continuous
-delivery, with an emphasis on the challenges associated with process
-improvement.<br> In his spare time, Alex likes contributing to open source, reading books,
-tracking stats, writing on his blog, refining his dotfiles and rock climbing.
-</p>
-  </div>
-</div>
-<hr>
-<div class="row">
-  <div class="col-xs-12 col-sm-12 col-lg-3 col-lg-offset-2">
-    <img class="img-responsive img-circle center-block" src="img/speakers/dann_pic.png">
-  </div>
-  <div class="col-xs-12 col-sm-12 col-lg-5">
-    <h2>Dann Toliver</h2>
-    <p>Dann enjoys building things, like programming languages, databases, distributed systems, communities of smart friendly humans, and pony castles with his two year old.</p>
-  </div>
-</div>
-<hr>
 
-<div class="row">
-  <div class="col-xs-12 col-sm-12 col-lg-3 col-lg-offset-2">
-    <img class="img-responsive img-circle center-block" src="img/speakers/shape_small.png">
-  </div>
-  <div class="col-xs-12 col-sm-12 col-lg-5">
-    <h2>Julie Haché</h2>
-    <p>Profile coming soon!</p>
-  </div>
-</div>
-<hr>
-
-<div class="row">
-  <div class="col-xs-12 col-sm-12 col-lg-3 col-lg-offset-2">
-    <img class="img-responsive img-circle center-block" src="img/speakers/laurie_pic.jpg">
-  </div>
-  <div class="col-xs-12 col-sm-12 col-lg-5">
-    <h2>Laurie Hendren</h2>
-    <p>Professor Laurie Hendren leads the Sable Research Group at McGill
-University.  She received her B.Sc. and M.Sc. degrees from Queen's
-University, Canada and her Ph.D. from Cornell.   She has been a
-professor at McGill since 1990,  was made an ACM Fellow in 2010, was
-awarded a Canada Research Chair in Compiler Tools and Techniques in
-2011, and was made a Fellow of the Royal Society of Canada in 2012.  The
-Sable Research Group has previously designed and implemented Soot and
-associated tools for the analysis and transformation of Java.   For the
-last five years the group has been developing McLAB, a framework for
-compiling and executing MATLAB and extensions of MATLAB.  In addition,
-she is currently part of a multi-disciplinary team developing domain-specific
-lanaguages and tools for patients and physicians in radiation oncology.
-</p>
-  </div>
-</div>
-<hr>
-
-<div class="row">
-  <div class="col-xs-12 col-sm-12 col-lg-3 col-lg-offset-2">
-    <img class="img-responsive img-circle center-block" src="img/speakers/prakash_pic%20copy.jpg">
-  </div>
-  <div class="col-xs-12 col-sm-12 col-lg-5">
-    <h2>Prakash Panangaden | Professor, McGill University</h2>
-    <p>Prakash Panangaden was born in Pune, India. He received a PhD from the University of Wisconsin–Milwaukee under the supervision of Leonard Parker. His PhD thesis was on renormalization of interacting fields in curved spacetime. He joined the Department of Computer Science at Cornell University in 1985 as an Assistant Professor, where he worked in the Nuprl project. He moved to McGill University as an associate professor in the School of Computer Science in 1990 and was promoted to professor in 1996. His research has covered programming languages, type theory, concurrency theory, dataflow programming, probabilistic systems, automata theory. He has also worked in pure mathematics and in theoretical physics. Prakash has successfully graduated 14 PhD students and has in total 32 descendants. He has been keynote speaker at many conferences, including the two top conferences in the field -- LICS [7] and ICALP. He is on the editorial boards of 6 journals. In 2013 he was elected a Fellow of the Royal Society of Candada.</p>
-  </div>
-</div>
-<hr>
-
-<div class="row">
-  <div class="col-xs-12 col-sm-12 col-lg-3 col-lg-offset-2">
-    <img class="img-responsive img-circle center-block" src="img/speakers/simon_pic%20copy.jpg">
-  </div>
-  <div class="col-xs-12 col-sm-12 col-lg-5">
-    <h2>Simon Eskildsen | Production Engineer, Shopify</h2>
-    <p>When Simon's not researching walruses or playing chaos monkey for the company's infrastructure, he's hard at work taming the wildlife of production, protecting Shopify from flash sales, scale, misbehaving resources and itself. Other than that, as a new resident of Canada, fulfilling his obligation to call everyone out when they think they've experienced "cold weather".</p>
-  </div>
-</div>
-<hr>
-<div class="row">
-  <div class="col-xs-12 col-sm-12 col-lg-3 col-lg-offset-2">
-    <img class="img-responsive img-circle center-block" src="img/speakers/josh_pic.jpeg">
-  </div>
-  <div class="col-xs-12 col-sm-12 col-lg-5">
-    <h2>Josh Matthews | Software Developer, Mozilla</h2>
-    <p>Josh is a software developer at Mozilla. He fixes crashes in Firefox, helps build a new web browser called Servo (using the new language called Rust), and mentors many volunteer developers for both projects. He sings in a barbershop quartet, and gets really excited about making open source projects accessible to new contributors!</p>
-  </div>
-</div>
-<hr>
-<div class="row">
-  <div class="col-xs-12 col-sm-12 col-lg-3 col-lg-offset-2">
-    <img class="img-responsive img-circle center-block" src="img/speakers/robin_pic.jpg">
-  </div>
-  <div class="col-xs-12 col-sm-12 col-lg-5">
-    <h2>Robin Grosset | Software Engineer, IBM</h2>
-    <p>Robin Grosset is an IBM Distinguished Engineer based in the IBM Ottawa Lab in Canada. Robin has a track record as an entrepreneur having worked in and founded successful software startups which resulted in him joining IBM in 2008 through an acquisition. Robin has over 20 years commercial experience in the field of Business Analytics and he is currently technical lead and architect for Watson Analytics a groundbreaking cognitive analytics system.  Robin holds a first class honours degree in both Physics and Computing Science from the University of Newcastle in the UK.</p>
-  </div>
-</div>
-<hr>
-<div class="row">
-  <div class="col-xs-12 col-sm-12 col-lg-3 col-lg-offset-2">
-    <img class="img-responsive img-circle center-block" src="img/speakers/lucille_pic.jpg">
-  </div>
-  <div class="col-xs-12 col-sm-12 col-lg-5">
-    <h2>Lucille Hua | Student, McGill</h2>
-    <p>Lucille Hua is a fourth year student at McGill University, majoring in software engineering and minoring in music technology. You may know her as a software engineer at YouTube, Google, VP External for CS Undergraduate Society, McHacks board of directors, Secretariat of SSUNS 2014, web developer for numerous sites and a keen researcher. She has deep interests in computer networks, web traffic optimizations, as well as video streaming technology, video codecs, and music tech. She has put hours of work into these fields, and she is looking forward to share it with all of you. Besides her nerdy sides, she is also a seventeen-year ballet dancer, a ten-year guitarist, a singer and composer, and a travelholic.</p>
-  </div>
-</div>
-<hr>
-<div class="row">
-  <div class="col-xs-12 col-sm-12 col-lg-3 col-lg-offset-2">
-    <img class="img-responsive img-circle center-block" src="img/speakers/fiona_pic.jpeg">
-  </div>
-  <div class="col-xs-12 col-sm-12 col-lg-5">
-    <h2>Fiona Condon | Software Engineer, Etsy</h2>
-    <p>Fiona Condon is a senior software engineer on the search ranking team at Etsy. She works to make Etsy’s vast marketplace easy and fun to explore, with a focus on internationalization. She's a one-time Vancouverite living in Brooklyn and she enjoys reading, eating and tweeting.</p>
-  </div>
-</div>
+{% for speaker in site.breakout_speakers %}
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-lg-3 col-lg-offset-2">
+        <img class="img-responsive img-circle center-block" src="{{speaker.pic}}">
+      </div>
+      <div class="col-xs-12 col-sm-12 col-lg-5">
+        <h2>{{speaker.fname}} {{speaker.lname}} 
+        {% if speaker.tagline %}
+          | {{speaker.tagline}}
+        {% endif %}
+        </h2>
+        <p>{{speaker.bio}}</p>
+      </div>
+    </div>
+    
+    {% if forloop.last != true %}
+      <hr>
+    {% endif %}
+{% endfor %}
