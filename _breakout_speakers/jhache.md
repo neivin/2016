@@ -8,5 +8,5 @@ tagline:
 
 bio: Profile coming soon!
 
-pic: /img/speakers/shape_small.png
+pic: img/speakers/shape_small.png
 ---

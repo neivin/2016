@@ -8,5 +8,5 @@ tagline: Software Engineer, Stripe
 
 bio:
 
-pic: /img/speakers/julia_pic.jpg
+pic: img/speakers/julia_pic.jpg
 ---

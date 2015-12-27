@@ -10,5 +10,5 @@ bio: "Alex Selesse is a software engineering graduate from McGill University in 
 Alex's areas of interest include code readability, automation and continuous delivery. His talk is based on his professional experience with continuous delivery, with an emphasis on the challenges associated with process improvement.
 In his spare time, Alex likes contributing to open source, reading books, tracking stats, writing on his blog, refining his dotfiles and rock climbing."
 
-pic: /img/speakers/selesse_pic.jpg
+pic: img/speakers/selesse_pic.jpg
 ---
